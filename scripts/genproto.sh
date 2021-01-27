@@ -42,7 +42,7 @@ for dir in ${DIRS}; do
     run protoc --gofast_out=plugins=grpc:. -I=".:${GOGOPROTO_PATH}:${ETCD_ROOT_DIR}/..:${GRPC_GATEWAY_ROOT}/third_party/googleapis" \
       --plugin="${GOFAST_BIN}" ./*.proto
 
-    sed -i.bak -E 's|"etcd/api/|"go.etcd.io/etcd/api/v3/|g' ./*.pb.go
+    sed -i.bak -E 's|"etcd/api/|"github.com/tudyzhb/etcd/api/v3/|g' ./*.pb.go
 
     rm -f ./*.bak
     run gofmt -s -w ./*.pb.go
@@ -70,12 +70,12 @@ for pb in api/etcdserverpb/rpc server/etcdserver/api/v3lock/v3lockpb/v3lock serv
   gwfile="${pb}.pb.gw.go"
 
   sed -i -E "s#package $pkg#package gw#g" "${gwfile}"
-  sed -i -E "s#import \(#import \(\"go.etcd.io/etcd/${pkgpath}\"#g" "${gwfile}"
+  sed -i -E "s#import \(#import \(\"github.com/tudyzhb/etcd/${pkgpath}\"#g" "${gwfile}"
   sed -i -E "s#([ (])([a-zA-Z0-9_]*(Client|Server|Request)([^(]|$))#\1${pkg}.\2#g" "${gwfile}"
   sed -i -E "s# (New[a-zA-Z0-9_]*Client\()# ${pkg}.\1#g" "${gwfile}"
-  sed -i -E "s|go.etcd.io/etcd|go.etcd.io/etcd/v3|g" "${gwfile}"
-  sed -i -E "s|go.etcd.io/etcd/v3/api|go.etcd.io/etcd/api/v3|g" "${gwfile}"
-  sed -i -E "s|go.etcd.io/etcd/v3/server|go.etcd.io/etcd/server/v3|g" "${gwfile}"
+  sed -i -E "s|github.com/tudyzhb/etcd|github.com/tudyzhb/etcd/v3|g" "${gwfile}"
+  sed -i -E "s|github.com/tudyzhb/etcd/v3/api|github.com/tudyzhb/etcd/api/v3|g" "${gwfile}"
+  sed -i -E "s|github.com/tudyzhb/etcd/v3/server|github.com/tudyzhb/etcd/server/v3|g" "${gwfile}"
   
   run go fmt "${gwfile}"
 

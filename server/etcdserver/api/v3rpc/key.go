@@ -18,10 +18,10 @@ package v3rpc
 import (
 	"context"
 
-	pb "go.etcd.io/etcd/api/v3/etcdserverpb"
-	"go.etcd.io/etcd/api/v3/v3rpc/rpctypes"
-	"go.etcd.io/etcd/pkg/v3/adt"
-	"go.etcd.io/etcd/server/v3/etcdserver"
+	pb "github.com/tudyzhb/etcd/api/v3/etcdserverpb"
+	"github.com/tudyzhb/etcd/api/v3/v3rpc/rpctypes"
+	"github.com/tudyzhb/etcd/pkg/v3/adt"
+	"github.com/tudyzhb/etcd/server/v3/etcdserver"
 )
 
 type kvServer struct {

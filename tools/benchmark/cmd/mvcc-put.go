@@ -21,9 +21,9 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"go.etcd.io/etcd/pkg/v3/report"
-	"go.etcd.io/etcd/pkg/v3/traceutil"
-	"go.etcd.io/etcd/server/v3/lease"
+	"github.com/tudyzhb/etcd/pkg/v3/report"
+	"github.com/tudyzhb/etcd/pkg/v3/traceutil"
+	"github.com/tudyzhb/etcd/server/v3/lease"
 
 	"github.com/spf13/cobra"
 )

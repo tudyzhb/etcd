@@ -1,4 +1,4 @@
-module go.etcd.io/etcd/tools/v3
+module github.com/tudyzhb/etcd/tools/v3
 
 go 1.15
 

@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"math"
 
-	"go.etcd.io/etcd/api/v3/mvccpb"
-	"go.etcd.io/etcd/pkg/v3/adt"
+	"github.com/tudyzhb/etcd/api/v3/mvccpb"
+	"github.com/tudyzhb/etcd/pkg/v3/adt"
 )
 
 var (

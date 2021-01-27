@@ -19,8 +19,8 @@ import (
 	"sync"
 	"time"
 
-	pb "go.etcd.io/etcd/api/v3/etcdserverpb"
-	"go.etcd.io/etcd/client/v3"
+	pb "github.com/tudyzhb/etcd/api/v3/etcdserverpb"
+	"github.com/tudyzhb/etcd/client/v3"
 
 	"go.uber.org/zap"
 )

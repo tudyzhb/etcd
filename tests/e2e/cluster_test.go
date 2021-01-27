@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/server/v3/etcdserver"
+	"github.com/tudyzhb/etcd/server/v3/etcdserver"
 )
 
 const etcdProcessBasePort = 20000

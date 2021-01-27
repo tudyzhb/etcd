@@ -18,6 +18,6 @@ package main_test
 // module (e.g. for sake of 'bom' generation).
 // Thanks to this 'go mod tidy' is not removing that dependencies from go.mod.
 import (
-	_ "go.etcd.io/etcd/client/v2"            // keep
-	_ "go.etcd.io/etcd/tests/v3/integration" // keep
+	_ "github.com/tudyzhb/etcd/client/v2"            // keep
+	_ "github.com/tudyzhb/etcd/tests/v3/integration" // keep
 )

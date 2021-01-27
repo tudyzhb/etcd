@@ -20,7 +20,7 @@ import (
 	"log"
 	"sort"
 
-	"go.etcd.io/etcd/client/v2"
+	"github.com/tudyzhb/etcd/client/v2"
 )
 
 func mockKeysAPI_directory() {

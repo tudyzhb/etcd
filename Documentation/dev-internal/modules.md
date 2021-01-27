@@ -11,33 +11,33 @@ The etcd project (since version 3.5) is organized into multiple
 
 There are following modules: 
   
-  - **go.etcd.io/etcd/api/v3** - contains API definitions
+  - **github.com/tudyzhb/etcd/api/v3** - contains API definitions
   (like protos & proto-generated libraries) that defines communication protocol
   between etcd clients and server.
   
-  - **go.etcd.io/etcd/pkg/v3** - collection of utility packages used by etcd
+  - **github.com/tudyzhb/etcd/pkg/v3** - collection of utility packages used by etcd
   without being specific to etcd itself. A package belongs here
   only if it could possibly be moved out into its own repository in the future.
   Please avoid adding here code that has a lot of dependencies on its own, as
   they automatically becoming dependencies of the client library
   (that we want to keep lightweight).
 
-  - **go.etcd.io/etcd/client/v3** - client library used to contact etcd over 
+  - **github.com/tudyzhb/etcd/client/v3** - client library used to contact etcd over 
   the network (grpc). Recommended for all new usage of etcd. 
   
-  - **go.etcd.io/etcd/client/v2** - legacy client library used to contact etcd 
+  - **github.com/tudyzhb/etcd/client/v2** - legacy client library used to contact etcd 
   over HTTP protocol. Deprecated. All new usage should depend on /v3 library.
   
-  - **go.etcd.io/etcd/raft/v3** - implementation of distributed consensus 
+  - **github.com/tudyzhb/etcd/raft/v3** - implementation of distributed consensus 
   protocol. Should have no etcd specific code.
   
-  - **go.etcd.io/etcd/server/v3** - etcd implementation.
+  - **github.com/tudyzhb/etcd/server/v3** - etcd implementation.
   The code in this package is etcd internal and should not be consumed 
   by external projects. The package layout and API can change within the minor versions.
   
-  - **go.etcd.io/etcd/etcdctl/v3** - a command line tool to access and manage etcd. 
+  - **github.com/tudyzhb/etcd/etcdctl/v3** - a command line tool to access and manage etcd. 
   
-  - **go.etcd.io/etcd/tests/v3** - a module that contains all integration tests of etcd.
+  - **github.com/tudyzhb/etcd/tests/v3** - a module that contains all integration tests of etcd.
     Notice: All unit-tests (fast and not requiring cross-module dependencies)
     should be kept in the local modules to the code under the test. 
   
@@ -48,7 +48,7 @@ There are following modules:
 ### Operations
 
 1. All etcd modules should be released in the same versions, e.g. 
-   `go.etcd.io/etcd/client/v3@v3.5.10` must depend on `go.etcd.io/etcd/api/v3@v3.5.10`.
+   `github.com/tudyzhb/etcd/client/v3@v3.5.10` must depend on `github.com/tudyzhb/etcd/api/v3@v3.5.10`.
    
    The consistent updating of versions can by performed using: 
    ```shell script

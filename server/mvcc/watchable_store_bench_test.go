@@ -19,10 +19,10 @@ import (
 	"os"
 	"testing"
 
-	"go.etcd.io/etcd/pkg/v3/traceutil"
-	"go.etcd.io/etcd/server/v3/etcdserver/cindex"
-	"go.etcd.io/etcd/server/v3/lease"
-	"go.etcd.io/etcd/server/v3/mvcc/backend"
+	"github.com/tudyzhb/etcd/pkg/v3/traceutil"
+	"github.com/tudyzhb/etcd/server/v3/etcdserver/cindex"
+	"github.com/tudyzhb/etcd/server/v3/lease"
+	"github.com/tudyzhb/etcd/server/v3/mvcc/backend"
 
 	"go.uber.org/zap"
 )

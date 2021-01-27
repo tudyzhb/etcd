@@ -14,7 +14,7 @@
 
 package tester
 
-import "go.etcd.io/etcd/tests/v3/functional/rpcpb"
+import "github.com/tudyzhb/etcd/tests/v3/functional/rpcpb"
 
 // Checker checks cluster consistency.
 type Checker interface {

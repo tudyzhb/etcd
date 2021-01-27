@@ -18,8 +18,8 @@ import (
 	"os"
 	"testing"
 
-	"go.etcd.io/etcd/pkg/v3/testutil"
-	"go.etcd.io/etcd/tests/v3/integration"
+	"github.com/tudyzhb/etcd/pkg/v3/testutil"
+	"github.com/tudyzhb/etcd/tests/v3/integration"
 )
 
 var lazyCluster = integration.NewLazyCluster()

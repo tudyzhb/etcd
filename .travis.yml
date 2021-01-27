@@ -1,5 +1,5 @@
 language: go
-go_import_path: go.etcd.io/etcd/v3
+go_import_path: github.com/tudyzhb/etcd/v3
 
 sudo: required
 
@@ -75,40 +75,40 @@ script:
     case "${TARGET}" in
       linux-amd64-fmt)
         docker run --rm \
-          --volume=`pwd`:/go/src/go.etcd.io/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
+          --volume=`pwd`:/go/src/github.com/tudyzhb/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
           /bin/bash -c "GOARCH=amd64 PASSES='fmt bom dep' ./test"
         ;;
       linux-amd64-integration-1-cpu)
         # TODO: Reenable 'race' when https://github.com/etcd-io/etcd/issues/12336 fixed.
         docker run --rm \
-          --volume=`pwd`:/go/src/go.etcd.io/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
+          --volume=`pwd`:/go/src/github.com/tudyzhb/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
           /bin/bash -c "GOARCH=amd64 CPU=1 PASSES='integration' RACE='false' ./test"
         ;;
       linux-amd64-integration-2-cpu)
         # TODO: Reenable 'race' when https://github.com/etcd-io/etcd/issues/12336 fixed.
         docker run --rm \
-          --volume=`pwd`:/go/src/go.etcd.io/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
+          --volume=`pwd`:/go/src/github.com/tudyzhb/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
           /bin/bash -c "GOARCH=amd64 CPU=2 PASSES='integration' RACE='false' ./test"
         ;;
       linux-amd64-integration-4-cpu)
         # TODO: Reenable 'race' when https://github.com/etcd-io/etcd/issues/12336 fixed.
         docker run --rm \
-          --volume=`pwd`:/go/src/go.etcd.io/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
+          --volume=`pwd`:/go/src/github.com/tudyzhb/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
           /bin/bash -c "GOARCH=amd64 CPU=4 PASSES='integration' RACE='false' ./test"
         ;;
       linux-amd64-functional)
         docker run --rm \
-          --volume=`pwd`:/go/src/go.etcd.io/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
+          --volume=`pwd`:/go/src/github.com/tudyzhb/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
           /bin/bash -c "GO_BUILD_FLAGS='-v -mod=readonly' ./build && GOARCH=amd64 PASSES='functional' ./test"
         ;;
       linux-amd64-unit-4-cpu-race)
         docker run --rm \
-          --volume=`pwd`:/go/src/go.etcd.io/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
+          --volume=`pwd`:/go/src/github.com/tudyzhb/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
           /bin/bash -c "GOARCH=amd64 PASSES='unit' RACE='true' CPU='4' ./test -p=2"
         ;;
       all-build)
         docker run --rm \
-          --volume=`pwd`:/go/src/go.etcd.io/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
+          --volume=`pwd`:/go/src/github.com/tudyzhb/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
           /bin/bash -c "GOARCH=amd64 PASSES='build' ./test \
             && GOARCH=386 PASSES='build' ./test \
             && GO_BUILD_FLAGS='-v -mod=readonly' GOOS=darwin GOARCH=amd64 ./build \
@@ -130,7 +130,7 @@ script:
         ;;
       linux-386-unit-1-cpu)
         docker run --rm \
-          --volume=`pwd`:/go/src/go.etcd.io/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
+          --volume=`pwd`:/go/src/github.com/tudyzhb/etcd gcr.io/etcd-development/etcd-test:go${TRAVIS_GO_VERSION} \
           /bin/bash -c "GOARCH=386 PASSES='unit' RACE='false' CPU='1' ./test -p=4"
         ;;
     esac

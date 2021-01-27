@@ -12,7 +12,7 @@ import (
 
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/golang/protobuf/proto"
-	etcdserverpb "go.etcd.io/etcd/api/v3/etcdserverpb"
+	etcdserverpb "github.com/tudyzhb/etcd/api/v3/etcdserverpb"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"

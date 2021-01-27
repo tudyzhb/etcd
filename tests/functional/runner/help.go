@@ -25,7 +25,7 @@ import (
 	"text/tabwriter"
 	"text/template"
 
-	"go.etcd.io/etcd/api/v3/version"
+	"github.com/tudyzhb/etcd/api/v3/version"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"

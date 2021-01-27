@@ -19,9 +19,9 @@ import (
 	"fmt"
 	"strings"
 
-	"go.etcd.io/etcd/raft/v3/quorum"
-	pb "go.etcd.io/etcd/raft/v3/raftpb"
-	"go.etcd.io/etcd/raft/v3/tracker"
+	"github.com/tudyzhb/etcd/raft/v3/quorum"
+	pb "github.com/tudyzhb/etcd/raft/v3/raftpb"
+	"github.com/tudyzhb/etcd/raft/v3/tracker"
 )
 
 // Changer facilitates configuration changes. It exposes methods to handle

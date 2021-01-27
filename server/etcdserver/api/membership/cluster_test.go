@@ -23,11 +23,11 @@ import (
 
 	"github.com/coreos/go-semver/semver"
 
-	"go.etcd.io/etcd/pkg/v3/testutil"
-	"go.etcd.io/etcd/pkg/v3/types"
-	"go.etcd.io/etcd/raft/v3/raftpb"
-	"go.etcd.io/etcd/server/v3/etcdserver/api/v2store"
-	"go.etcd.io/etcd/server/v3/mock/mockstore"
+	"github.com/tudyzhb/etcd/pkg/v3/testutil"
+	"github.com/tudyzhb/etcd/pkg/v3/types"
+	"github.com/tudyzhb/etcd/raft/v3/raftpb"
+	"github.com/tudyzhb/etcd/server/v3/etcdserver/api/v2store"
+	"github.com/tudyzhb/etcd/server/v3/mock/mockstore"
 
 	"go.uber.org/zap"
 )

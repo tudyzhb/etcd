@@ -432,7 +432,7 @@
 		]
 	},
 	{
-		"project": "go.etcd.io/etcd/api/v3",
+		"project": "github.com/tudyzhb/etcd/api/v3",
 		"licenses": [
 			{
 				"type": "Apache License 2.0",
@@ -441,7 +441,7 @@
 		]
 	},
 	{
-		"project": "go.etcd.io/etcd/client/v2",
+		"project": "github.com/tudyzhb/etcd/client/v2",
 		"licenses": [
 			{
 				"type": "Apache License 2.0",
@@ -450,7 +450,7 @@
 		]
 	},
 	{
-		"project": "go.etcd.io/etcd/client/v3",
+		"project": "github.com/tudyzhb/etcd/client/v3",
 		"licenses": [
 			{
 				"type": "Apache License 2.0",
@@ -459,7 +459,7 @@
 		]
 	},
 	{
-		"project": "go.etcd.io/etcd/etcdctl/v3",
+		"project": "github.com/tudyzhb/etcd/etcdctl/v3",
 		"licenses": [
 			{
 				"type": "Apache License 2.0",
@@ -468,7 +468,7 @@
 		]
 	},
 	{
-		"project": "go.etcd.io/etcd/pkg/v3",
+		"project": "github.com/tudyzhb/etcd/pkg/v3",
 		"licenses": [
 			{
 				"type": "Apache License 2.0",
@@ -477,7 +477,7 @@
 		]
 	},
 	{
-		"project": "go.etcd.io/etcd/raft/v3",
+		"project": "github.com/tudyzhb/etcd/raft/v3",
 		"licenses": [
 			{
 				"type": "Apache License 2.0",
@@ -486,7 +486,7 @@
 		]
 	},
 	{
-		"project": "go.etcd.io/etcd/server/v3",
+		"project": "github.com/tudyzhb/etcd/server/v3",
 		"licenses": [
 			{
 				"type": "Apache License 2.0",
@@ -495,7 +495,7 @@
 		]
 	},
 	{
-		"project": "go.etcd.io/etcd/tests/v3",
+		"project": "github.com/tudyzhb/etcd/tests/v3",
 		"licenses": [
 			{
 				"type": "Apache License 2.0",
@@ -504,7 +504,7 @@
 		]
 	},
 	{
-		"project": "go.etcd.io/etcd/v3",
+		"project": "github.com/tudyzhb/etcd/v3",
 		"licenses": [
 			{
 				"type": "Apache License 2.0",

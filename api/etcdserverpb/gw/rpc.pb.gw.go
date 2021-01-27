@@ -10,7 +10,7 @@ package gw
 
 import (
 	"context"
-	"go.etcd.io/etcd/api/v3/etcdserverpb"
+	"github.com/tudyzhb/etcd/api/v3/etcdserverpb"
 	"io"
 	"net/http"
 

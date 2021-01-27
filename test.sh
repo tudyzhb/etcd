@@ -339,13 +339,13 @@ function cov_pass {
   # strip out generated files (using GNU-style sed)
   sed --in-place -E "/[.]pb[.](gw[.])?go/d" "${cover_out_file}" || true
 
-  sed --in-place -E "s|go.etcd.io/etcd/api/v3/|api/|g" "${cover_out_file}" || true
-  sed --in-place -E "s|go.etcd.io/etcd/client/v3/|client/v3/|g" "${cover_out_file}" || true
-  sed --in-place -E "s|go.etcd.io/etcd/client/v2/|client/v2/|g" "${cover_out_file}" || true
-  sed --in-place -E "s|go.etcd.io/etcd/etcdctl/v3/|etcdctl/|g" "${cover_out_file}" || true
-  sed --in-place -E "s|go.etcd.io/etcd/pkg/v3/|pkg/|g" "${cover_out_file}" || true
-  sed --in-place -E "s|go.etcd.io/etcd/raft/v3/|raft/|g" "${cover_out_file}" || true
-  sed --in-place -E "s|go.etcd.io/etcd/server/v3/|server/|g" "${cover_out_file}" || true
+  sed --in-place -E "s|github.com/tudyzhb/etcd/api/v3/|api/|g" "${cover_out_file}" || true
+  sed --in-place -E "s|github.com/tudyzhb/etcd/client/v3/|client/v3/|g" "${cover_out_file}" || true
+  sed --in-place -E "s|github.com/tudyzhb/etcd/client/v2/|client/v2/|g" "${cover_out_file}" || true
+  sed --in-place -E "s|github.com/tudyzhb/etcd/etcdctl/v3/|etcdctl/|g" "${cover_out_file}" || true
+  sed --in-place -E "s|github.com/tudyzhb/etcd/pkg/v3/|pkg/|g" "${cover_out_file}" || true
+  sed --in-place -E "s|github.com/tudyzhb/etcd/raft/v3/|raft/|g" "${cover_out_file}" || true
+  sed --in-place -E "s|github.com/tudyzhb/etcd/server/v3/|server/|g" "${cover_out_file}" || true
 
   # held failures to generate the full coverage file, now fail
   if [ -n "$failed" ]; then

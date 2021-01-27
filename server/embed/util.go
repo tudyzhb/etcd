@@ -17,7 +17,7 @@ package embed
 import (
 	"path/filepath"
 
-	"go.etcd.io/etcd/server/v3/wal"
+	"github.com/tudyzhb/etcd/server/v3/wal"
 )
 
 func isMemberInitialized(cfg *Config) bool {

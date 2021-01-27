@@ -18,11 +18,11 @@ import (
 	"testing"
 	"time"
 
-	clientv3 "go.etcd.io/etcd/client/v3"
-	"go.etcd.io/etcd/client/v3/naming"
-	"go.etcd.io/etcd/pkg/v3/testutil"
-	"go.etcd.io/etcd/server/v3/proxy/grpcproxy"
-	"go.etcd.io/etcd/tests/v3/integration"
+	clientv3 "github.com/tudyzhb/etcd/client/v3"
+	"github.com/tudyzhb/etcd/client/v3/naming"
+	"github.com/tudyzhb/etcd/pkg/v3/testutil"
+	"github.com/tudyzhb/etcd/server/v3/proxy/grpcproxy"
+	"github.com/tudyzhb/etcd/tests/v3/integration"
 
 	"go.uber.org/zap"
 	gnaming "google.golang.org/grpc/naming"

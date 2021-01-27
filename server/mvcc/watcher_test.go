@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/api/v3/mvccpb"
-	"go.etcd.io/etcd/server/v3/lease"
-	"go.etcd.io/etcd/server/v3/mvcc/backend"
+	"github.com/tudyzhb/etcd/api/v3/mvccpb"
+	"github.com/tudyzhb/etcd/server/v3/lease"
+	"github.com/tudyzhb/etcd/server/v3/mvcc/backend"
 	"go.uber.org/zap"
 )
 

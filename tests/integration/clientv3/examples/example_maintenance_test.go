@@ -18,7 +18,7 @@ import (
 	"context"
 	"log"
 
-	"go.etcd.io/etcd/client/v3"
+	"github.com/tudyzhb/etcd/client/v3"
 )
 
 func mockMaintenance_status() {}

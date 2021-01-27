@@ -17,8 +17,8 @@ package auth
 import (
 	"testing"
 
-	"go.etcd.io/etcd/api/v3/authpb"
-	"go.etcd.io/etcd/pkg/v3/adt"
+	"github.com/tudyzhb/etcd/api/v3/authpb"
+	"github.com/tudyzhb/etcd/pkg/v3/adt"
 
 	"go.uber.org/zap"
 )

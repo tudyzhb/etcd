@@ -21,9 +21,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	pb "go.etcd.io/etcd/api/v3/etcdserverpb"
-	"go.etcd.io/etcd/api/v3/v3rpc/rpctypes"
-	"go.etcd.io/etcd/client/v3"
+	pb "github.com/tudyzhb/etcd/api/v3/etcdserverpb"
+	"github.com/tudyzhb/etcd/api/v3/v3rpc/rpctypes"
+	"github.com/tudyzhb/etcd/client/v3"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

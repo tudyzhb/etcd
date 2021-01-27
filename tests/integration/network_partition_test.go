@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/pkg/v3/testutil"
+	"github.com/tudyzhb/etcd/pkg/v3/testutil"
 )
 
 func TestNetworkPartition5MembersLeaderInMinority(t *testing.T) {

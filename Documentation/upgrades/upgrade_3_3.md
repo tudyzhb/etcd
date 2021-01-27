@@ -382,7 +382,7 @@ docker pull gcr.io/etcd-development/etcd:v3.3.0
 
 ```diff
 import (
-+	"go.etcd.io/etcd/clientv3"
++	"github.com/tudyzhb/etcd/clientv3"
 
 	"google.golang.org/grpc"
 +	"google.golang.org/grpc/codes"
@@ -404,7 +404,7 @@ _, err := kvc.Get(ctx, "a")
 ```diff
 import (
 	"time"
-	"go.etcd.io/etcd/clientv3"
+	"github.com/tudyzhb/etcd/clientv3"
 +	"google.golang.org/grpc"
 )
 

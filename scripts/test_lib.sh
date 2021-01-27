@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ROOT_MODULE="go.etcd.io/etcd"
+ROOT_MODULE="github.com/tudyzhb/etcd"
 
 if [[ "$(go list)" != "${ROOT_MODULE}/v3" ]]; then
   echo "must be run from '${ROOT_MODULE}/v3' module directory"

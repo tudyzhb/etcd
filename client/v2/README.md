@@ -2,14 +2,14 @@
 
 etcd/client is the Go client library for etcd.
 
-[![GoDoc](https://godoc.org/go.etcd.io/etcd/client?status.png)](https://godoc.org/go.etcd.io/etcd/client)
+[![GoDoc](https://godoc.org/github.com/tudyzhb/etcd/client?status.png)](https://godoc.org/github.com/tudyzhb/etcd/client)
 
 For full compatibility, it is recommended to install released versions of clients using go modules.
 
 ## Install
 
 ```bash
-go get go.etcd.io/etcd/v3/client
+go get github.com/tudyzhb/etcd/v3/client
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ import (
 	"time"
 	"context"
 
-	"go.etcd.io/etcd/v3/client"
+	"github.com/tudyzhb/etcd/v3/client"
 )
 
 func main() {

@@ -18,7 +18,7 @@ import (
 	"sync"
 	"time"
 
-	"go.etcd.io/etcd/pkg/v3/transport"
+	"github.com/tudyzhb/etcd/pkg/v3/transport"
 
 	"github.com/spf13/cobra"
 	"gopkg.in/cheggaaa/pb.v1"

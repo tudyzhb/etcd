@@ -19,7 +19,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"go.etcd.io/etcd/pkg/v3/transport"
+	"github.com/tudyzhb/etcd/pkg/v3/transport"
 )
 
 // copyTLSFiles clones certs files to dst directory.

@@ -1,21 +1,21 @@
 # etcd/clientv3
 
 [![Docs](https://img.shields.io/badge/docs-latest-green.svg)](https://etcd.io/docs)
-[![Godoc](https://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://godoc.org/go.etcd.io/etcd/clientv3)
+[![Godoc](https://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://godoc.org/github.com/tudyzhb/etcd/clientv3)
 
 `etcd/clientv3` is the official Go etcd client for v3.
 
 ## Install
 
 ```bash
-go get go.etcd.io/etcd/client/v3
+go get github.com/tudyzhb/etcd/client/v3
 ```
 
 Warning: As etcd 3.5.0 was not yet released, the command above does not work. 
 After first pre-release of 3.5.0 [#12498](https://github.com/etcd-io/etcd/issues/12498), 
 etcd can be referenced using: 
 ```
-go get go.etcd.io/etcd/client/v3@v3.5.0-pre
+go get github.com/tudyzhb/etcd/client/v3@v3.5.0-pre
 ```
 
 ## Get started
@@ -55,7 +55,7 @@ For full compatibility, it is recommended to install released versions of client
 etcd client returns 2 types of errors:
 
 1. context error: canceled or deadline exceeded.
-2. gRPC error: see [api/v3rpc/rpctypes](https://godoc.org/go.etcd.io/etcd/etcdserver/api/v3rpc/rpctypes).
+2. gRPC error: see [api/v3rpc/rpctypes](https://godoc.org/github.com/tudyzhb/etcd/etcdserver/api/v3rpc/rpctypes).
 
 Here is the example code to handle client errors:
 
@@ -81,7 +81,7 @@ The etcd client optionally exposes RPC metrics through [go-grpc-prometheus](http
 
 ## Namespacing
 
-The [namespace](https://godoc.org/go.etcd.io/etcd/client/v3/namespace) package provides `clientv3` interface wrappers to transparently isolate client requests to a user-defined prefix.
+The [namespace](https://godoc.org/github.com/tudyzhb/etcd/client/v3/namespace) package provides `clientv3` interface wrappers to transparently isolate client requests to a user-defined prefix.
 
 ## Request size limit
 
@@ -89,4 +89,4 @@ Client request size limit is configurable via `clientv3.Config.MaxCallSendMsgSiz
 
 ## Examples
 
-More code [examples](https://github.com/etcd-io/etcd/tree/master/tests/integration/clientv3/examples) can be found at [GoDoc](https://pkg.go.dev/go.etcd.io/etcd/client/v3).
+More code [examples](https://github.com/etcd-io/etcd/tree/master/tests/integration/clientv3/examples) can be found at [GoDoc](https://pkg.go.dev/github.com/tudyzhb/etcd/client/v3).

@@ -20,9 +20,9 @@ import (
 	"net/http"
 	"time"
 
-	"go.etcd.io/etcd/api/v3/v3rpc/rpctypes"
-	"go.etcd.io/etcd/client/v3"
-	"go.etcd.io/etcd/server/v3/etcdserver/api/etcdhttp"
+	"github.com/tudyzhb/etcd/api/v3/v3rpc/rpctypes"
+	"github.com/tudyzhb/etcd/client/v3"
+	"github.com/tudyzhb/etcd/server/v3/etcdserver/api/etcdhttp"
 	"go.uber.org/zap"
 )
 

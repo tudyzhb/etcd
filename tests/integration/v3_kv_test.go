@@ -2,11 +2,11 @@ package integration
 
 import (
 	"context"
-	"go.etcd.io/etcd/client/v3"
-	"go.etcd.io/etcd/client/v3/namespace"
-	"go.etcd.io/etcd/pkg/v3/testutil"
-	"go.etcd.io/etcd/server/v3/embed"
-	"go.etcd.io/etcd/server/v3/etcdserver/api/v3client"
+	"github.com/tudyzhb/etcd/client/v3"
+	"github.com/tudyzhb/etcd/client/v3/namespace"
+	"github.com/tudyzhb/etcd/pkg/v3/testutil"
+	"github.com/tudyzhb/etcd/server/v3/embed"
+	"github.com/tudyzhb/etcd/server/v3/etcdserver/api/v3client"
 	"io/ioutil"
 	"os"
 	"testing"

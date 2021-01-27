@@ -18,7 +18,7 @@ import (
 	"context"
 	"sync"
 
-	"go.etcd.io/etcd/client/v3"
+	"github.com/tudyzhb/etcd/client/v3"
 )
 
 type watcherPrefix struct {

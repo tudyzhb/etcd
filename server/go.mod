@@ -1,4 +1,4 @@
-module go.etcd.io/etcd/server/v3
+module github.com/tudyzhb/etcd/server/v3
 
 go 1.15
 
@@ -27,11 +27,11 @@ require (
 	github.com/tmc/grpc-websocket-proxy v0.0.0-20200427203606-3cfed13b9966
 	github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2
 	go.etcd.io/bbolt v1.3.5
-	go.etcd.io/etcd/api/v3 v3.5.0-pre
-	go.etcd.io/etcd/client/v2 v2.305.0-pre
-	go.etcd.io/etcd/client/v3 v3.5.0-pre
-	go.etcd.io/etcd/pkg/v3 v3.5.0-pre
-	go.etcd.io/etcd/raft/v3 v3.5.0-pre
+	github.com/tudyzhb/etcd/api/v3 v3.5.0-pre
+	github.com/tudyzhb/etcd/client/v2 v2.305.0-pre
+	github.com/tudyzhb/etcd/client/v3 v3.5.0-pre
+	github.com/tudyzhb/etcd/pkg/v3 v3.5.0-pre
+	github.com/tudyzhb/etcd/raft/v3 v3.5.0-pre
 	go.uber.org/zap v1.16.0
 	golang.org/x/crypto v0.0.0-20201002170205-7f63de1d35b0
 	golang.org/x/lint v0.0.0-20200302205851-738671d3881b // indirect
@@ -44,16 +44,16 @@ require (
 )
 
 replace (
-	go.etcd.io/etcd/api/v3 => ../api
-	go.etcd.io/etcd/client/v2 => ../client/v2
-	go.etcd.io/etcd/client/v3 => ../client/v3
-	go.etcd.io/etcd/pkg/v3 => ../pkg
-	go.etcd.io/etcd/raft/v3 => ../raft
+	github.com/tudyzhb/etcd/api/v3 => ../api
+	github.com/tudyzhb/etcd/client/v2 => ../client/v2
+	github.com/tudyzhb/etcd/client/v3 => ../client/v3
+	github.com/tudyzhb/etcd/pkg/v3 => ../pkg
+	github.com/tudyzhb/etcd/raft/v3 => ../raft
 )
 
 // Bad imports are sometimes causing attempts to pull that code.
 // This makes the error more explicit.
 replace (
-	go.etcd.io/etcd => ./FORBIDDEN_DEPENDENCY
+	github.com/tudyzhb/etcd => ./FORBIDDEN_DEPENDENCY
 	go.etcd.io/tests/v3 => ./FORBIDDEN_DEPENDENCY
 )

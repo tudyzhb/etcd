@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	pb "go.etcd.io/etcd/api/v3/etcdserverpb"
+	pb "github.com/tudyzhb/etcd/api/v3/etcdserverpb"
 )
 
 // MustFetchNotEmptyMetric attempts to fetch given 'metric' from 'member',

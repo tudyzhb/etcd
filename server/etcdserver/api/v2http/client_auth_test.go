@@ -30,8 +30,8 @@ import (
 	"strings"
 	"testing"
 
-	"go.etcd.io/etcd/server/v3/etcdserver/api"
-	"go.etcd.io/etcd/server/v3/etcdserver/api/v2auth"
+	"github.com/tudyzhb/etcd/server/v3/etcdserver/api"
+	"github.com/tudyzhb/etcd/server/v3/etcdserver/api/v2auth"
 
 	"go.uber.org/zap"
 )

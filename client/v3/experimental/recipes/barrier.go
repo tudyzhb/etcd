@@ -17,8 +17,8 @@ package recipe
 import (
 	"context"
 
-	"go.etcd.io/etcd/api/v3/mvccpb"
-	v3 "go.etcd.io/etcd/client/v3"
+	"github.com/tudyzhb/etcd/api/v3/mvccpb"
+	v3 "github.com/tudyzhb/etcd/client/v3"
 )
 
 // Barrier creates a key in etcd to block processes, then deletes the key to
