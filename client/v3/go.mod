@@ -7,8 +7,8 @@ require (
 	github.com/google/uuid v1.1.2
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
 	github.com/prometheus/client_golang v1.5.1
-	github.com/tudyzhb/etcd/api/v3 v3.5.0-pre
-	github.com/tudyzhb/etcd/pkg/v3 v3.5.0-pre
+	github.com/tudyzhb/etcd/api/v3 v3.0.0-20210127071335-23d8d429626e
+	github.com/tudyzhb/etcd/pkg/v3 v3.0.0-20210127071335-23d8d429626e
 	go.uber.org/zap v1.16.0
 	google.golang.org/grpc v1.35.0
 	sigs.k8s.io/yaml v1.2.0
