@@ -247,7 +247,7 @@ func (bb *baseBalancer) HandleSubConnStateChange(sc balancer.SubConn, s grpcconn
 		bb.updatePicker()
 	}
 
-	bb.currentConn.UpdateBalancerState(bb.connectivityRecorder.GetCurrentState(), bb.picker)
+	//bb.currentConn.UpdateBalancerState(bb.connectivityRecorder.GetCurrentState(), bb.picker)
 }
 
 func (bb *baseBalancer) updatePicker() {
@@ -289,5 +289,19 @@ func (bb *baseBalancer) updatePicker() {
 // Close is a nop because base balancer doesn't have internal state to clean up,
 // and it doesn't need to call RemoveSubConn for the SubConns.
 func (bb *baseBalancer) Close() {
+	// TODO
+}
+
+
+func (bb *baseBalancer) ResolverError(e error) {
+	// TODO
+}
+
+func (bb *baseBalancer) UpdateClientConnState(a balancer.ClientConnState) (error) {
+	// TODO
+	return nil
+}
+
+func (bb *baseBalancer) UpdateSubConnState(a balancer.SubConn, b balancer.SubConnState) {
 	// TODO
 }

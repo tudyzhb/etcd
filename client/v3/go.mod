@@ -4,16 +4,13 @@ go 1.15
 
 require (
 	github.com/dustin/go-humanize v1.0.0
-	github.com/golang/protobuf v1.4.2 // indirect
 	github.com/google/uuid v1.1.2
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
 	github.com/prometheus/client_golang v1.5.1
-	github.com/stretchr/testify v1.5.1 // indirect
 	github.com/tudyzhb/etcd/api/v3 v3.5.0-pre
 	github.com/tudyzhb/etcd/pkg/v3 v3.5.0-pre
 	go.uber.org/zap v1.16.0
-	google.golang.org/grpc v1.29.1
-	google.golang.org/protobuf v1.25.0 // indirect
+	google.golang.org/grpc v1.35.0
 	sigs.k8s.io/yaml v1.2.0
 )
 
